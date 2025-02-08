@@ -1,0 +1,32 @@
+.App {
+  /* text-align: center; */
+  background-color: hsl(0, 0%, 8%);
+  color: #fff;
+  height: 1200px;
+}
+.film-css > .row{
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+.image-container {
+  position: relative;
+  transition: transform 0.13ms;
+}
+.image-container:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+} 
+.overlay {
+  position: absolute;
+  background-color: rgb(0, 0, 0, 0.8);
+  width: 100%;
+  bottom: 0;
+  padding: 20px;
+  opacity: 0;
+  transition: 0.5s ease;
+  text-align: center;
+  font-size: 20px;
+}
+.image-container:hover > .overlay {
+  opacity: 1;
+}
